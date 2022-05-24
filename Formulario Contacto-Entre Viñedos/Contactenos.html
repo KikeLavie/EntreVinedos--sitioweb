@@ -1,0 +1,66 @@
+>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Entre Viñedos | Contactenos</title>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./sweetalert.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    
+
+  </style>
+</head>
+<body>
+<main> 
+  <div class="container">
+    <div class="item1">
+      <div class="heading">
+        <h1>Vení a conocer Entre-Viñedos</h1>
+        <p class="subtitle">Date el gusto de descansar en nuestro hogar y disfrutar de sus paisajes</p>
+      </div>
+  
+    <div class="registration">
+      <form id="formulario" action="https://formspree.io/f/xgedrkew"
+        method="POST">
+      <div class="input_element">
+        <input type="text" placeholder="Nombre" id="firstName">
+        <i class="invalidInput_warning"></i>
+        <span>File Name cannot be empty</span>
+        <br>
+      </div>
+      <div class="input_element">
+        <input type="text" placeholder="Apellido" id="lastName">
+        <i class="invalidInput_warning"></i>
+        <span>Last Name cannot be empty</span>
+        <br>
+      </div>
+      <div class="input_element">
+        <input type="text" placeholder="Email" id="emailAddress">
+        <i class="invalidInput_warning"></i>
+        <span>Looks like this is not an email</span>
+        <br>
+      </div>
+      <div class="input_element">
+        <p><textarea name="text" rows="5" cols="50" id="textarea">Escribe aquí tu comentario: </textarea></p>
+        <span>Looks like this is not an email</span>
+        <br>
+      </div>
+        <input type="submit" value="CONTACTANOS" id="submit">
+    
+      </form>
+      <a href="./sweetalert.js"></a>
+    </div>
+  </div>
+  </div>
+</main>
+
+  <script src="Contactenos.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+:root {
+    /* ### Primary */
+    
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    
+    /* ### Accent */
+    
+    --Blue: hsl(248, 32%, 49%);
+    
+    /* ### Neutral */
+    
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+    
+    }
+    
+    html {
+        max-width: 100%;
+    }
+   
+
+    
+    body {
+        font-family: "poppins";
+        background-color:#8f3b45;
+        background-image: url('la-casa-entre-viñedos.jpg');
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        max-width: 100%;
+    }
+    
+    main {
+        display: flex !important;
+        max-width: 100%;
+    }
+    
+    .container {
+        display: grid;
+        align-items: center;
+        padding: 2em;
+        margin: 0 auto;
+        max-width: 100%
+    }
+    
+    .heading {
+        color: white;
+       margin: 1px 1px 1px 1px;
+       text-align: center;
+        font-size: medium;
+       text-shadow: 2px 2px  rgb(8, 122, 50);
+       
+    }
+    .heading :hover, .active {
+        border-top: 1px solid rgb(8, 122, 50);
+        border-bottom: 1px solid rgb(8, 122, 50);
+    }
+
+    
+    .heading h1 {
+        font-size: 30px;
+        justify-content: center;
+        background-color:seagreen;
+     
+    }
+
+    .subtitle{
+        font-size: 15px;
+        padding-bottom: 1px;
+        background-color:seagreen;
+        box-shadow: 1em;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        padding: 1px 0;
+        transition: 0.7s ease-out;
+    }
+    .subtitle:hover, .active {
+        border-top: 1px solid rgb(209, 244, 10);
+        border-bottom: 1px solid rgb(209, 244, 10);
+    }
+    
+    .pricing {
+        background-color: var(--Blue);
+        color: white;
+        padding: 1.2em;
+        border-radius: 0.7em;
+        text-align: center;
+        box-shadow: 0px 10px 1px 0px rgb(0 0 0 / 15%);
+    }
+    
+    .registration {
+        margin-top: 2em;
+        background-color: white;
+        border-radius: 0.7em;
+        padding-bottom: 3em;
+        box-shadow: 0px 10px 1px 0px rgb(0 0 0 / 15%);
+    }
+    
+    .registration form {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        position: relative;
+    }
+    
+    .registration form input {
+        border-radius: 0.3em;
+        padding: 1em;
+        border: 1px solid var(--GrayishBlue);
+        color: gray;
+    }
+    
+    .registration form input:last-child {
+        background-color: var(--Green);
+        color: white;
+        box-shadow: 0px 5px 1px 0px green;
+        border-style: none;
+        font-size: 1.3em;
+        padding: 0.7em;
+        cursor: pointer;
+    }
+    #Text {
+        padding: 50px;
+        text-align: center;
+      
+    }
+
+    #textarea{
+        border-color: gray;
+        border-radius: 0.3em;
+        color:gray;
+        
+        
+    }
+
+    #submit{  border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        padding: 10px 0;
+        transition: 0.7s ease-out;
+    }
+    #submit:hover, .active {
+        border-top: 2px solid rgb(209, 244, 10);
+        border-bottom: 2px solid rgb(209, 244, 10);
+       
+    }
+
+    
+    .registration p {
+        text-align: center;
+        color: var(--GrayishBlue);
+        padding: 0em 4em;
+        margin: 0;
+    }
+    
+    .registration p a {
+        color: var(--Red);
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    .invalidInput {
+        border: 2px solid var(--Red) !important;
+    }
+    
+    .invalidInput_warning {
+        background-image: url(images/icon-error.svg);
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 0;
+        margin-top: 14px;
+        margin-right: 54px;
+        display: none;
+    }
+    
+    .input_element {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .registration form .input_element span {
+       font-weight: 400;
+       font-size: 12px;
+       color: var(--Red);
+       text-align: right;
+       margin-top: 7px;
+       display: none;
+    }
+    
+    /* for larger resolutions */
+    @media (min-width: 768px) {
+        .container {
+            grid-template-columns: 1fr 1fr;
+            padding: 2rem;
+            max-width: 1000px;
+        }
+    
+        .heading {
+            text-align: left;
+            margin-right: 1px;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            padding: 10px 0;
+            transition: 0.7s ease-out;
+        }
+     
+        .heading h1 {
+            font-size: 30px;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            padding: 1px 0;
+            transition: 0.7s ease-out;
+        }
+        
+.heading h1:hover, .active {
+    border-top: 1px solid rgb(209, 244, 10);
+    border-bottom: 1px solid rgb(209, 244, 10);
+}
+    }
